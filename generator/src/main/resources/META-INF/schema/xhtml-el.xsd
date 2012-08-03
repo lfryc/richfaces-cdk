@@ -85,6 +85,8 @@
     <xs:import schemaLocation="cdk-jstl-core.xsd" namespace="http://jboss.org/schema/richfaces/cdk/jstl/core" />
     <xs:import schemaLocation="cdk-extensions.xsd" namespace="http://jboss.org/schema/richfaces/cdk/ext" />
 
+    <xs:include schemaLocation="aria-attributes-1.xsd" />
+
 	<xs:annotation>
 		<xs:documentation>
 			================== Imported Names
@@ -491,6 +493,7 @@
 		<xs:attribute name="style" type="StyleSheet" />
 		<xs:attribute name="title" type="Text" />
         <xs:attributeGroup ref="x:coreattrs" />
+        <xs:attributeGroup ref="ARIA.attrib" />
 	</xs:attributeGroup>
 
 	<xs:simpleType name="simpleType.dir">
@@ -890,6 +893,7 @@
         <xs:attribute ref="x:shape" ></xs:attribute>
         <xs:attribute ref="x:coords" ></xs:attribute>
         <xs:attribute ref="x:target" ></xs:attribute>
+        
         
         <xs:attributeGroup ref="cdk:core.attrs" />
 	</xs:complexType>
