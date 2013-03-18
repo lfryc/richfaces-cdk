@@ -6,11 +6,8 @@
           xmlns:cc="http://jboss.org/schema/richfaces/cdk/jsf/composite">
 
     <cc:interface>
-        <cdk:class>org.richfaces.renderkit.TestComponentRenderer</cdk:class>
-        <cdk:superclass>org.richfaces.renderkit.TestComponentRendererBase</cdk:superclass>
-        <cdk:component-family>org.richfaces.TestComponentFamily</cdk:component-family>
-        <cdk:renderer-type>org.richfaces.TestComponentRenderer</cdk:renderer-type>
-        <cdk:component-base-class>org.richfaces.component.TestComponent</cdk:component-base-class>
+        <cdk:superclass>org.richfaces.ui.test.TestComponentRendererBase</cdk:superclass>
+        <cdk:component-base-class>org.richfaces.ui.test.AbstractTestComponent</cdk:component-base-class>
     </cc:interface>
 
     <cc:implementation>

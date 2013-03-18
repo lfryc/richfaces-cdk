@@ -1,7 +1,9 @@
-package org.richfaces.renderkit;
+package org.richfaces.ui.test;
 
 import javax.faces.application.ResourceDependencies;
 import javax.faces.application.ResourceDependency;
+
+import org.richfaces.renderkit.RendererBase;
 
 @ResourceDependencies({
         @ResourceDependency(library = "org.richfaces", name = "testComponent.js"),

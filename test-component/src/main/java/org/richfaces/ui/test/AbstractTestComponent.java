@@ -19,27 +19,18 @@
  * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
-package org.richfaces.component;
+package org.richfaces.ui.test;
 
 import javax.faces.component.UIComponentBase;
 
 import org.richfaces.cdk.annotations.Attribute;
 import org.richfaces.cdk.annotations.JsfComponent;
-import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.cdk.annotations.Tag;
-import org.richfaces.renderkit.TestComponentRendererBase;
 
 /**
  * Base class for the component.
  */
-@JsfComponent(
-        type = TestComponent.COMPONENT_TYPE,
-        family = TestComponent.COMPONENT_FAMILY,
-        renderer = @JsfRenderer(type = TestComponentRendererBase.RENDERER_TYPE),
-        tag = @Tag(name="testComponent"))
-public abstract class TestComponent extends UIComponentBase {
-    public static final String COMPONENT_FAMILY = "org.richfaces.TestComponentFamily";
-    public static final String COMPONENT_TYPE = "org.richfaces.TestComponent";
+@JsfComponent
+public abstract class AbstractTestComponent extends UIComponentBase {
 
     @Attribute
     abstract public String getAttr();
